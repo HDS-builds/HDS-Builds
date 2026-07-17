@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Checkout - HDS VELOCITY X I</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.checkout-box{
+    width:90%;
+    max-width:650px;
+    margin:30px auto;
+    background:#111;
+    padding:25px;
+    border-radius:15px;
+    border:2px solid #00ff88;
+    color:white;
+    text-align:center;
+}
+
+.checkout-box img{
+    width:180px;
+    border-radius:10px;
+}
+
+h1,h2{
+    color:#00ff88;
+}
+
+.details{
+    text-align:left;
+    line-height:1.8;
+}
+
+.price{
+    font-size:30px;
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.notice{
+    background:#300;
+    border:1px solid red;
+    padding:15px;
+    border-radius:10px;
+    color:#ffaaaa;
+    margin:20px 0;
+}
+
+input,textarea{
+    width:90%;
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    margin:5px;
+    font-size:16px;
+}
+
+textarea{
+    height:100px;
+}
+
+.proceed{
+    background:#00ff88;
+    color:black;
+    padding:14px 35px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="checkout-box">
+
+
+<h1>Checkout</h1>
+
+
+<img src="images/hardcore-intel.png">
+
+
+<h2>HDS VELOCITY X - I</h2>
+
+
+<div class="details">
+
+<b>CPU:</b> Intel Core i9-14900F<br>
+
+<b>GPU:</b> NVIDIA RTX 5080 16GB<br>
+
+<b>Motherboard:</b> ASRock Z790 Taichi<br>
+
+<b>RAM:</b> 64GB DDR5 6000MHz<br>
+
+<b>Storage:</b> 2TB NVMe SSD<br>
+
+<b>Cooler:</b> Arctic Liquid Freezer III Pro 360mm<br>
+
+<b>PSU:</b> 1000W 80+ Gold Fully Modular<br>
+
+<b>Cabinet:</b> Ant Esports Aqua 360 4F
+
+</div>
+
+
+<p class="price">₹3,79,999</p>
+
+
+
+<div class="notice">
+
+⚠️ <b>Important Notice</b><br><br>
+
+This is a custom-built high-end PC.<br>
+100% advance payment is required before order processing.
+
+</div>
+
+
+
+<h2>Delivery Details</h2>
+
+
+
+<form id="checkoutForm">
+
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+
+<input type="text" id="state" placeholder="State" required>
+
+
+<input type="text" id="city" placeholder="City" required>
+
+
+<input type="number" id="pincode" placeholder="Pincode" required>
+
+
+<textarea id="address" placeholder="Full Delivery Address" required></textarea>
+
+
+<br>
+
+
+<button class="proceed" type="submit">
+PROCEED TO PAYMENT
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+<script>
+
+document.getElementById("checkoutForm").addEventListener("submit",function(e){
+
+let pin=document.getElementById("pincode").value;
+
+
+if(pin.length!==6){
+
+alert("Enter a valid 6 digit pincode");
+
+e.preventDefault();
+
+return;
+
+}
+
+
+window.location.href="payment.html";
+
+
+});
+
+
+</script>
+
+
+</body>
+</html>

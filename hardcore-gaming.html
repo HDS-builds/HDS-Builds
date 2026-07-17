@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<title>HDS VELOCITY X - Hardcore Gaming</title>
+
+<style>
+body{
+    background:#0b0b0b;
+    color:white;
+    font-family:Arial, sans-serif;
+    margin:0;
+}
+
+h1{
+    text-align:center;
+    color:#00ff88;
+    padding:20px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#151515;
+    width:350px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 15px #00ff88;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+h2{
+    color:#00ff88;
+}
+
+.specs{
+    text-align:left;
+    line-height:1.7;
+}
+
+.price{
+    font-size:25px;
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.buy{
+    background:#00ff88;
+    border:none;
+    padding:12px 30px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+.buy:hover{
+    background:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>HDS VELOCITY X - HARDCORE GAMING</h1>
+
+<div class="container">
+
+<!-- AMD VERSION -->
+
+<div class="card">
+
+<img src="images/hardcore-amd.png">
+
+<h2>HDS VELOCITY X - A</h2>
+
+<div class="specs">
+<b>CPU:</b> Ryzen 7 9800X3D<br>
+<b>GPU:</b> RTX 4090 24GB<br>
+<b>Motherboard:</b> ASUS ROG Strix X870-F WiFi<br>
+<b>RAM:</b> 64GB DDR5 6000MHz<br>
+<b>Storage:</b> 2TB NVMe SSD<br>
+<b>Cooler:</b> Arctic Liquid Freezer III Pro 360mm<br>
+<b>PSU:</b> 1000W 80+ Gold<br>
+<b>Cabinet:</b> Ant Esports Aqua 360 4F
+</div>
+
+<p class="price">₹4,19,999</p>
+
+  <button class="buy" onclick="location.href='checkout-hardcore-amd.html'">
+BUY NOW
+  </button>
+
+</div>
+
+
+<!-- INTEL VERSION -->
+
+<div class="card">
+
+<img src="images/hardcore-intel.png">
+
+<h2>HDS VELOCITY X - I</h2>
+
+<div class="specs">
+<b>CPU:</b> Intel Core i9-14900F<br>
+<b>GPU:</b> RTX 5080 16GB<br>
+<b>Motherboard:</b> ASRock Z790 Taichi<br>
+<b>RAM:</b> 64GB DDR5 6000MHz<br>
+<b>Storage:</b> 2TB NVMe SSD<br>
+<b>Cooler:</b> Arctic Liquid Freezer III Pro 360mm<br>
+<b>PSU:</b> 1000W 80+ Gold<br>
+<b>Cabinet:</b> Ant Esports Aqua 360 4F
+</div>
+
+<p class="price">₹3,79,999</p>
+
+<button class="buy" onclick="location.href='checkout-hardcore-intel.html'">
+BUY NOW
+</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

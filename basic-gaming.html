@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Basic Gaming | HDS BUILDS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<h1>HDS <span>BUILDS</span></h1>
+
+<p>BUILT TO PERFORM</p>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="explore.html">Explore PCs</a></li>
+
+<li><a href="custom.html">Custom PC</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Basic Gaming PCs</h1>
+
+<p>Perfect entry-level gaming systems built with genuine components and professionally assembled.</p>
+
+</section>
+
+<section class="products">
+
+<div class="product">
+
+<img src="images/amd.png">
+
+<h2>HDS ALPHA G1-A</h2>
+
+<h3>₹46,999</h3>
+
+<p class="delivery">🚚 Delivery : 10 Days</p>
+
+<p class="warranty">🛡 1 Year Warranty</p>
+
+<div class="specs">
+
+<p>✔ AMD Ryzen 5 3200G</p>
+
+<p>✔ Radeon RX 580 8GB</p>
+
+<p>✔ MSI A320M Motherboard</p>
+
+<p>✔ 16GB DDR4 RAM</p>
+
+<p>✔ 1TB SATA SSD</p>
+
+<p>✔ 450W 80+ PSU</p>
+
+<p>✔ AMD Wraith Stealth Cooler</p>
+
+<p>✔ Windows 11</p>
+
+</div>
+
+<a href="checkout-amd.html">
+
+<button class="buy" onclick="openCheckout()">
+BUY NOW
+</button>
+
+</a>
+
+</div>
+<div class="product">
+
+<img src="images/intel.png" alt="HDS ALPHA G1-I">
+
+<h2>HDS ALPHA G1-I</h2>
+
+<h3>₹44,999</h3>
+
+<p class="delivery">🚚 Delivery : 10 Days</p>
+
+<p class="warranty">🛡 1 Year Warranty</p>
+
+<div class="specs">
+
+<p>✔ Intel Core i7-9700</p>
+
+<p>✔ NVIDIA GTX 1050 Ti 4GB</p>
+
+<p>✔ ASUS PRIME H310M-E R2.0</p>
+
+<p>✔ 16GB DDR4 RAM</p>
+
+<p>✔ 1TB SATA SSD</p>
+
+<p>✔ 400W 80+ PSU</p>
+
+<p>✔ Intel Stock Cooler</p>
+
+<p>✔ Windows 11</p>
+
+</div>
+
+<a href="checkout-intel.html">
+
+<button class="buy" onclick="openCheckout()">
+BUY NOW
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Why Choose HDS BUILDS?</h2>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+<h3>🚚 10 Days Delivery</h3>
+<p>Your PC is professionally assembled, tested and shipped across India within 10 working days.</p>
+</div>
+
+<div class="feature-box">
+<h3>🛡 1 Year Warranty</h3>
+<p>Every build comes with a one-year standard warranty and technical support.</p>
+</div>
+
+<div class="feature-box">
+<h3>🧪 Stress Tested</h3>
+<p>Each PC is benchmarked and tested before dispatch for maximum reliability.</p>
+</div>
+
+<div class="feature-box">
+<h3>📦 Secure Packaging</h3>
+<p>Every system is packed carefully to ensure safe delivery anywhere in India.</p>
+</div>
+
+</div>
+
+</section>
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-box">
+
+<h2>HDS BUILDS</h2>
+
+<p>
+Built to Perform.
+Premium gaming PCs assembled in India using genuine components.
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a><br>
+<a href="explore.html">Explore PCs</a><br>
+<a href="custom.html">Custom PC</a><br>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Support</h3>
+
+<p>📦 All India Shipping</p>
+
+<p>🛡 1 Year Warranty</p>
+
+<p>🚚 Build Time : 10 Days</p>
+
+<p>📧 support@hdsbuilds.com</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 HDS BUILDS. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+const cards=document.querySelectorAll('.product');
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add('show');
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+observer.observe(card);
+
+});
+
+</script>
+  <div id="checkout" class="popup">
+
+<div class="checkout-box">
+
+<span onclick="closeCheckout()" class="close">×</span>
+
+<h2>Checkout</h2>
+<form, action="payment.html">
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="number" placeholder="Phone Number" required>
+
+<input type="text" placeholder="Address" required>
+
+<input type="text" placeholder="Town / City" required>
+
+<input type="text" placeholder="State" required>
+
+<input type="number" placeholder="PIN Code" required>
+
+<select>
+<option>UPI</option>
+<option>Credit/Debit Card</option>
+</select>
+
+<button type="submit">Place Order</button>
+</form>
+</div>
+
+</div>
+
+</body>
+
+</html>

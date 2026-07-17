@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - HDS Nova M1-A</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Checkout</h1>
+
+<div class="checkout-product">
+
+    <img src="images/medium-amd.png" alt="HDS Nova M1-A">
+
+    <div class="product-info">
+
+        <h2>HDS Nova M1-A</h2>
+
+        <p>AMD Medium Gaming PC</p>
+
+        <ul>
+            <li>AMD Ryzen 7 5700X</li>
+            <li>AMD Radeon RX 6600 8GB</li>
+            <li>32GB DDR4 RAM</li>
+            <li>1TB NVMe SSD</li>
+            <li>Ant Esports V4 Air (Temperature Display)</li>
+            <li>Circle Defender ZX7</li>
+        </ul>
+
+        <h3>₹74,999</h3>
+
+    </div>
+
+</div>
+  
+  <h2>Customer Details</h2>
+
+  <form action="payment.html" method="get" class="customer-form">
+
+    <input type="text" name="fullname" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <input type="text" name="state" placeholder="State" required>
+
+    <input type="text" name="city" placeholder="City" required>
+
+    <input
+    type="text"
+    name="pincode"
+    placeholder="PIN Code"
+    inputmode="numeric"
+    pattern="[0-9]{6}"
+    maxlength="6"
+    required>
+
+    <textarea name="address" placeholder="Full Delivery Address" rows="4" required></textarea>
+
+    <button type="submit" class="checkout-btn">
+        Proceed to Payment
+    </button>
+
+</form>

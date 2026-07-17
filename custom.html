@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Custom PC Builder | HDS BUILDS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+HDS <span>BUILDS</span>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html">Explore PCs</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="categories">
+
+<h2>Custom PC Builder</h2>
+
+<p style="text-align:center; margin-bottom:40px;">
+Type the specifications exactly how you want your dream PC to be built.
+</p>
+
+<form id="pcForm" class="builder">
+
+<label>Processor</label>
+<input type="text" placeholder="Example: Ryzen 7 9800X3D" required>
+
+<label>Graphics Card</label>
+<input type="text" placeholder="Example: RTX 5070 Ti">
+
+<label>Motherboard</label>
+<input type="text" placeholder="Example: MSI B650 Tomahawk WiFi">
+
+<label>RAM</label>
+<input type="text" placeholder="Example: 32GB DDR5 6000MHz">
+
+<label>Storage</label>
+<input type="text" placeholder="Example: Samsung 990 Pro 2TB">
+
+<label>Power Supply</label>
+<input type="text" placeholder="Example: Corsair RM850e">
+
+<label>Cabinet</label>
+<input type="text" placeholder="Example: NZXT H6 Flow">
+
+<label>CPU Cooler</label>
+<input type="text" placeholder="Example: DeepCool LS720">
+
+<label>Operating System</label>
+<input type="text" placeholder="Windows 11 / Linux / None">
+
+<label>Monitor (Optional)</label>
+<input type="text" placeholder="Example: 27-inch 165Hz">
+
+<label>Keyboard (Optional)</label>
+<input type="text" placeholder="Example: Mechanical RGB">
+
+<label>Mouse (Optional)</label>
+<input type="text" placeholder="Example: Logitech G502">
+
+<label>Headset (Optional)</label>
+<input type="text" placeholder="Example: HyperX Cloud II">
+
+<label>Budget (₹)</label>
+<input type="number" placeholder="Enter your budget">
+
+<label>Additional Requirements</label>
+
+<textarea rows="6"
+placeholder="RGB, White Theme, Streaming PC, Editing PC, Specific Brand Preference, etc."></textarea>
+
+<button
+type="button"
+class="primary"
+onclick="openPopup()">
+
+Submit Build Request
+
+</button>
+
+</form>
+
+</section>
+
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<h2>Almost Done!</h2>
+
+<p>
+
+Enter your email address below to complete your request.
+
+Our moderator will review your configuration and contact you on the provided email address as soon as possible.
+
+</p>
+
+<input
+type="email"
+id="customerEmail"
+placeholder="Enter Your Email">
+
+<br><br>
+
+<button
+class="primary"
+onclick="submitRequest()">
+
+Submit
+
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>HDS BUILDS</h2>
+
+<p>
+Built For Performance
+</p>
+
+<p>
+
+🇮🇳 All India Shipping
+
+<br>
+
+📦 7–10 Business Days
+
+<br>
+
+💳 100% Advance Payment Required Until Inventory Is Available.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

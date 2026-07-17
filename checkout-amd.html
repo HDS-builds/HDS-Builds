@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AMD Gaming PC Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="checkout-page">
+
+<h1>HDS Alpha G1-A</h1>
+
+<img src="images/amd.png" class="checkout-img">
+
+<h2>₹46,999</h2>
+
+<p class="advance">
+100% Advance Payment Required
+</p>
+
+<p>
+As we are a new PC store, we require full advance payment before starting your order. Every PC is built only after the order is confirmed, allowing us to source the required components and assemble your system according to your selected configuration. This ensures better quality control and a properly tested PC before delivery.
+</p>
+
+<div class="form-box">
+  <form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="number" placeholder="Phone Number" required>
+
+<input type="text" placeholder="Full Address" required>
+
+<input type="text" placeholder="Town / City" required>
+
+<input type="text" placeholder="State" required>
+
+<input type="number" placeholder="PIN Code" required>
+
+<select> required
+<option>Select Payment Method</option>
+<option>UPI</option>
+</select>
+
+<button class="buy" onclick="checkForm()">
+    PAY NOW
+</button>
+</form>
+
+</div>
+
+</div>
+<script>
+function checkForm(){
+
+    let inputs = document.querySelectorAll("input");
+
+    for(let input of inputs){
+        if(input.value.trim() === ""){
+            alert("Please fill all details first");
+            return;
+        }
+    }
+
+    location.href = "payment.html";
+}
+</script>
+</body>
+</html>
