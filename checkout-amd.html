@@ -45,8 +45,9 @@ As we are a new PC store, we require full advance payment before starting your o
 <option>UPI</option>
 </select>
 
-<button class="buy" onclick="checkForm()">
-    PAY NOW
+<button class="buy" type="button"
+onclick="if(document.querySelector('form').checkValidity()){window.location.href='payment.html';}else{document.querySelector('form').reportValidity();}">
+  PAY NOW
 </button>
 </form>
 
